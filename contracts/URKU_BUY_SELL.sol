@@ -26,15 +26,9 @@ contract URKUTokenSale is Ownable {
     }
 
     function setTokenPrice(uint256 newPrice) external onlyOwner {
-        require(address(this) == urkuToken.approvedContract(), "Not authorized");
         tokenPrice = newPrice;
     }
 
-    // Función para cambiar la billetera que recibe los fondos
-    /*function setURKUWallet(address newWallet) external onlyOwner {
-        require(address(this) == urkuToken.approvedContract(), "Not authorized");
-        urkuWallet = newWallet;
-    }*/
     function withdrawUSDC(address to, uint256 amount) external onlyOwner {
         uint256 contractBalance = usdcToken.balanceOf(address(this));
         require(contractBalance >= amount, "Insufficient balance");

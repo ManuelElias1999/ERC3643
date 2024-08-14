@@ -640,11 +640,11 @@
 			]
 		},
 		"contracts/URKU_TOKEN.sol": {
-			"keccak256": "0x773e85ed24acfdcfdb744df7f628e692031416df05ac4b7dc48f70c9f3727cc0",
+			"keccak256": "0x7e9b6e5d63d95a16661bb37da0396118bc6d32d79734b76e15d635d00f35af1a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9ed57234a4ec43bbb4bd3e4c71247c288574cbd11f7b90a299ab333ea7f297de",
-				"dweb:/ipfs/QmYZFAW3hdcrnEXJjvECPQ5to9h89q27cXpmeW7g2FtQJy"
+				"bzz-raw://6ec73b6939b80d69fc8284e0e33f28b0e95ea678566054cac3f5a4755a3c87be",
+				"dweb:/ipfs/QmTY2NbeJ4s6etpumR252ibDzfd6LJEn72HXi7tbDyqPS1"
 			]
 		}
 	},

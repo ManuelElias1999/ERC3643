@@ -11,7 +11,7 @@ contract URKUToken is ERC20, Ownable {
     constructor() ERC20("Token", "TOK") Ownable(msg.sender){
         _mint(address(this), 586137525 * 10 ** (decimals() - 2));
     }
-
+    //Checked
     function mintTokens(uint256 amount) external onlyOwner {
         _mint(address(this), amount * 10 ** decimals());
     }
@@ -19,10 +19,9 @@ contract URKUToken is ERC20, Ownable {
     function burnTokens(address burnTokenAddress, uint256 amount) external onlyOwner {
         _burn(burnTokenAddress, amount * 10 ** decimals());
     }
-
+    //Checked
     function transferTokens(address to, uint256 amount) external onlyOwner {
         require(balanceOf(address(this)) >= amount * 10 ** decimals(), "Not enough tokens in contract");
         _transfer(address(this), to, amount * 10 ** decimals());
     }
-
 }
