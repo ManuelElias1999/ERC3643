@@ -91,6 +91,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "setTokenPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "tokenPrice",
 				"outputs": [
@@ -141,6 +154,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -178,7 +209,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/test.sol": "URKUTokenSale"
+			"contracts/URKU_BUY_SELL.sol": "URKUTokenSale"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -240,20 +271,20 @@
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
 			]
 		},
-		"contracts/URKU_TOKEN.sol": {
-			"keccak256": "0xc28e3750e07e47a542d93cfe89ebec82c04b930f3ecf4d7bd095a739cb76d017",
+		"contracts/URKU_BUY_SELL.sol": {
+			"keccak256": "0x84c4b7d5cfc63a241d0669965f35b478907e1ad65e3ab369f22fcf8702312953",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://665a00acf27d6d14ee4406149b12e02f8672b3e0564b1be32afba1a430777191",
-				"dweb:/ipfs/QmRdh7nsrb46o2xTuGTJyDPTroDX3mAeTphbdir6dni46K"
+				"bzz-raw://919257f42c63dba929ea14582278beba3167d05c17418400405832f0205c300a",
+				"dweb:/ipfs/QmUc7Pkpjk3ttpR1pGk5fGVp6z5pK14P74S5GHyHNudL12"
 			]
 		},
-		"contracts/test.sol": {
-			"keccak256": "0x0126d4819f88695bfc32d02b68ac929a99f946ca463c8b6912479a7a39cda234",
+		"contracts/URKU_TOKEN.sol": {
+			"keccak256": "0x7e9b6e5d63d95a16661bb37da0396118bc6d32d79734b76e15d635d00f35af1a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ea558a442ba6828de1f07c3e3e17713b85face5d5fba25edd3b6af2e81c4c2e",
-				"dweb:/ipfs/QmQKScu3PNzyvjnXu6M39fvZZB4RvVWh8GtskgF56ZLtRq"
+				"bzz-raw://6ec73b6939b80d69fc8284e0e33f28b0e95ea678566054cac3f5a4755a3c87be",
+				"dweb:/ipfs/QmTY2NbeJ4s6etpumR252ibDzfd6LJEn72HXi7tbDyqPS1"
 			]
 		}
 	},

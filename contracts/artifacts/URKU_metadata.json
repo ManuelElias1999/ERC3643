@@ -147,6 +147,25 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "initialSupply",
+						"type": "uint256"
+					}
+				],
+				"name": "ContractDeployed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "previousOwner",
@@ -160,6 +179,75 @@
 					}
 				],
 				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "burnTokenAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensBurned",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensMinted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensTransferred",
 				"type": "event"
 			},
 			{
@@ -233,19 +321,6 @@
 					}
 				],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "approvedContract",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -577,7 +652,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/URKU_TOKEN.sol": "URKUToken"
+			"contracts/URKU_TOKEN.sol": "URKU"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -640,11 +715,11 @@
 			]
 		},
 		"contracts/URKU_TOKEN.sol": {
-			"keccak256": "0xd4c7213ca9b24f309d8b077d736546e15a68674bd1540de37c6408baba603665",
+			"keccak256": "0x5e55d8a995d020d8f699c69bb9bfbec2fd6533cf542490df635cb47605eeba20",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b3ecfbd1d9b607dd810f3928a1a973b888122c19eeba8801e4e7d1f2adaf7a53",
-				"dweb:/ipfs/QmdtqC26WvskBgetoCMpB2AXsFnksqRj9DT5hzitRbPrHU"
+				"bzz-raw://84165abe758ff811a1a6b1a3cc4d7cdfe8107d756d647db5c263a8eee110dd40",
+				"dweb:/ipfs/QmdtajHztSSCT2GWzJ4dwSrbiL1hqVThwVSPyWMETfKkPH"
 			]
 		}
 	},

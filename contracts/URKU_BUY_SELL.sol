@@ -11,7 +11,7 @@ contract URKUTokenSale is Ownable {
     URKUToken public immutable urkuToken;
     uint256 public tokenPrice = 0.01 * 10 ** 6; 
 
-    constructor(address _urkuTokenAddress) Ownable(msg.sender){
+    constructor(address _urkuTokenAddress) Ownable(msg.sender) {
         usdcToken = IERC20(0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913);
         urkuToken = URKUToken(_urkuTokenAddress);
     }
@@ -21,7 +21,6 @@ contract URKUTokenSale is Ownable {
         uint256 tokenAmount = usdcAmount / tokenPrice;
         
         usdcToken.transferFrom(msg.sender, address(this), usdcAmount);
-
         urkuToken.transfer(msg.sender, tokenAmount * 10 ** urkuToken.decimals());
     }
 
@@ -33,5 +32,10 @@ contract URKUTokenSale is Ownable {
         uint256 contractBalance = usdcToken.balanceOf(address(this));
         require(contractBalance >= amount, "Insufficient balance");
         require(usdcToken.transfer(to, amount), "USDC transfer failed");
+    }
+
+    // Función para obtener el balance de USDC en el contrato
+    function getUSDCBalance() external view returns (uint256) {
+        return usdcToken.balanceOf(address(this));
     }
 }
