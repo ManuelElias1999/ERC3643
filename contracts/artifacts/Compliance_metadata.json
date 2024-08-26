@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_identityRegistry",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "canTransfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Compliance.sol": "Compliance"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Compliance.sol": {
+			"keccak256": "0xa36c94fe6a7b84effc754e1ab74ed90017938342e09bb51193a368638cfba173",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://077598e3eafd11fb0ee7c95428ce000a237ae14e2ebd01bc9c7567e9c75e8bde",
+				"dweb:/ipfs/QmV2f81hSjvtknX6RxDX7XrJ32NaJHkAPxR1nTPPh5qYRZ"
+			]
+		},
+		"contracts/IdentityRegistry.sol": {
+			"keccak256": "0x12d08ba087a979c5ac57afe7fc5e2782aadedc782c98745f246e30afb555eb2e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bf9b870a1df0b57bc0c276d43d801cf914e57190f050eeb4093682b854572856",
+				"dweb:/ipfs/QmcZ6AFPvN2pDbeM44kP3pT4cYKeXoEGYtbdRxwYtMHDsD"
+			]
+		}
+	},
+	"version": 1
+}

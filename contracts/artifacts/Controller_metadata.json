@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_compliance",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "checkCompliance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Controller.sol": "Controller"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Compliance.sol": {
+			"keccak256": "0x06b646d62662a2610828c606c996b19bbed8ea314717c1d5d9719d6a769a23c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://759c0eb169b7e8ad3277ae73cdf1231d98690434118ebb0cd4a8c8df12e0042c",
+				"dweb:/ipfs/QmZHbPdyt3iFCLBYH8j3ik2gZ9wUXjA5uLCH7DUjrmQd3U"
+			]
+		},
+		"contracts/Controller.sol": {
+			"keccak256": "0xf383d00777d7dfbf54d0d4a7d742b9b99511e089e4b1f08e69092013eb7d500a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e69add579c7b3119b5e11251561f4a87822fcda722de50ca03e9ef8020a5b361",
+				"dweb:/ipfs/QmNg9ExWwcWq7JDZ533wmHYAnByJxkG3Eqn1PtDzEeiA7A"
+			]
+		},
+		"contracts/IdentityRegistry.sol": {
+			"keccak256": "0x12d08ba087a979c5ac57afe7fc5e2782aadedc782c98745f246e30afb555eb2e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bf9b870a1df0b57bc0c276d43d801cf914e57190f050eeb4093682b854572856",
+				"dweb:/ipfs/QmcZ6AFPvN2pDbeM44kP3pT4cYKeXoEGYtbdRxwYtMHDsD"
+			]
+		}
+	},
+	"version": 1
+}

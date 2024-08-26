@@ -199,7 +199,7 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "burnAmount",
 						"type": "uint256"
 					}
 				],
@@ -218,7 +218,7 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "mintAmount",
 						"type": "uint256"
 					}
 				],
@@ -351,7 +351,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "burnAmount",
 						"type": "uint256"
 					}
 				],
@@ -377,7 +377,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "mintAmount",
 						"type": "uint256"
 					}
 				],
@@ -715,11 +715,11 @@
 			]
 		},
 		"contracts/URKU_TOKEN.sol": {
-			"keccak256": "0x5e55d8a995d020d8f699c69bb9bfbec2fd6533cf542490df635cb47605eeba20",
+			"keccak256": "0x2cd2f8cc4e35aa5ff260d9905f652adc5dddb06de62e2ce226284329b7079b9a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://84165abe758ff811a1a6b1a3cc4d7cdfe8107d756d647db5c263a8eee110dd40",
-				"dweb:/ipfs/QmdtajHztSSCT2GWzJ4dwSrbiL1hqVThwVSPyWMETfKkPH"
+				"bzz-raw://b5c771e8bc6380de21da4b8a9169ab55eb83ef41bc73c99c9b1478f92a74c1ef",
+				"dweb:/ipfs/QmVp2VZbYq2K4JrEq9BovSBWxPjBKpnbeUyU6NPFeUVPfN"
 			]
 		}
 	},
